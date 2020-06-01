@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: "Avenir Next";
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-style: italic;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+h3 {
+  font-style: italic;
+  font-weight: 700;
+}
+
+h4 {
+  font-style: italic;
+  font-weight: 600;
+}
+
+h5 {
+  color: red;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+p {
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: none;
+
+  line-height: 2;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  filter: blur(4px);
+}
+
+#TOC {
+  margin-top: 10%;
+}
+
+#header {
+  width: 100%;
+}
+
+#container {
+  width: 85%;
+  margin: 10% auto;
+}
+
+#row {
+  display: flex;
+}
+
+#column {
+  flex: 50%;
+}
