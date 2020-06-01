@@ -77,9 +77,9 @@ a:hover {
   margin-bottom: 10%;
 }
 
-#row {
+/* #row {
   display: flex;
-}
+} */
 
 #column {
   flex: 50%;
