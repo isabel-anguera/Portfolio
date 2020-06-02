@@ -90,7 +90,8 @@ a:hover {
 #Section3,
 #Section4,
 #Section5,
-#Section6 {
+#Section6,
+#Section7 {
   margin-bottom: 10%;
   padding-top: 5%;
 }
@@ -116,4 +117,12 @@ a:hover {
 
 video {
   width: 100%;
+}
+
+#url {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 500;
+  font-style: italic;
+  color: #ef3f45;
 }
