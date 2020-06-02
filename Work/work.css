@@ -74,22 +74,23 @@ a:hover {
 }
 
 #subsection {
-  margin-bottom: 10%;
+  margin: 7% 0;
 }
 
-/* #row {
+#row {
   display: flex;
-} */
+}
 
 #column {
   flex: 50%;
 }
 
-#ProjectGoalSection,
-#ResearchSection,
-#MethodOfDeploymentSection,
-#DesignAspectsSection,
-#WireframeSection {
+#Section1,
+#Section2,
+#Section3,
+#Section4,
+#Section5,
+#Section6 {
   margin-bottom: 10%;
   padding-top: 5%;
 }
@@ -111,4 +112,8 @@ a:hover {
   margin-top: 20%;
   padding: 4% 0;
   text-align: center;
+}
+
+video {
+  width: 100%;
 }
