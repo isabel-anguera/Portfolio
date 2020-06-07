@@ -1,11 +1,14 @@
 body {
-  font-family: "Avenir Next";
+  /* font-family: "Avenir Next"; */
+  font-family: "Gill Sans";
   margin: 0;
   text-align: center;
 }
 
 h1 {
   margin-top: 7%;
+  margin-bottom: 0;
+  font-family: "Courier New";
 }
 
 h2 {
@@ -24,6 +27,12 @@ h4 {
   font-weight: 500;
 }
 
+h5 {
+  font-weight: 400;
+  font-size: 1.1em;
+  margin-right: 5%;
+}
+
 p {
   font-weight: lighter;
 }
@@ -35,6 +44,12 @@ a {
 
 a:hover {
   filter: blur(4px);
+}
+
+#pages {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
 }
 
 #social-media-bar {
@@ -60,4 +75,97 @@ a:hover {
   margin-bottom: 0;
   margin-top: 20%;
   padding: 4% 0;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    text-align: left;
+    white-space: nowrap;
+  }
+
+  #header {
+    display: flex;
+    max-width: 95%;
+    margin: 0 auto;
+    border-bottom: 2px solid silver;
+  }
+
+  #pages {
+    white-space: nowrap;
+    margin-top: 5.5%;
+    margin-left: 5%;
+    justify-content: left;
+  }
+
+  h5 {
+    margin-right: 20%;
+  }
+
+  #social-media-bar {
+    text-align: right;
+    margin-top: 8%;
+  }
+
+  #social-media-icon {
+    width: 6%;
+    margin-right: 2%;
+  }
+
+  #thumbnail-container {
+    margin-top: 5%;
+    width: 95%;
+    margin-bottom: 0;
+  }
+
+  #thumbnail {
+    width: 95%;
+  }
+
+  #row {
+    display: flex;
+  }
+
+  #footer {
+    margin-top: 5%;
+    padding: 0.5%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    margin-top: 3%;
+  }
+
+  #pages {
+    justify-content: left;
+    margin-top: 1.5%;
+  }
+
+  #header {
+    margin: 0 auto;
+    width: 90%;
+    padding: 0 5%;
+    border-bottom: none;
+    box-shadow: -2px 2px 2px silver;
+  }
+
+  #social-media-bar {
+    margin-top: 3%;
+    justify-content: right;
+    border: 2px red solid;
+    margin-right: 0;
+  }
+
+  #social-media-icon {
+    width: 5%;
+  }
+
+  #thumbnail {
+    width: 98%;
+  }
+
+  #thumbnail-container {
+    width: 90%;
+  }
 }
