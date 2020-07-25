@@ -5,15 +5,43 @@
     <link rel="stylesheet" href="index.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
+
   <body>
-    <div id="header">
-      <h1>Isabel Anguera</h1>
-      <div id="pages">
+    <div id="main" class="startState">
+      <div class="header">
+        <div id="row">
+          <div id="column">
+            <div
+              id="menuContainer"
+              class="menuIconContainer"
+              onclick="showMenu()"
+            >
+              <div class="topBar"></div>
+              <div class="middleBar"></div>
+              <div class="bottomBar"></div>
+            </div>
+          </div>
+
+          <div id="column">
+            <h1>Isabel Anguera</h1>
+          </div>
+        </div>
+      </div>
+
+      <div id="bioBlurb">
+        <p>
+          Say something about myself here. What I do, what my status is, what I
+          am like, etc. Make it interesting but short
+        </p>
+      </div>
+
+      <!-- <div id="pages">
         <h5><a href="AboutMe.html">About Me</a></h5>
+
         <h5><a href="Colophon.html">Colophon</a></h5>
       </div>
 
-      <div id="social-media-bar">
+      <span id="social-media-bar">
         <a href="https://www.facebook.com/isabel.anguera.5"
           ><img id="social-media-icon" src="Assets/facebook-icon.png"
         /></a>
@@ -29,43 +57,64 @@
         <a href="https://twitter.com/itsisabel22"
           ><img id="social-media-icon" src="Assets/twitter-icon.png" />
         </a>
+      </span>
+    </div> -->
+
+      <div id="thumbnail-container">
+        <div id="row">
+          <a href="Work/campusFacilities.html"
+            ><img id="thumbnail" src="Assets/campusFacilitiesHeader.png" />
+            <h2>Campus Facilities @ The New School</h2>
+            <h3>UX/UI</h3></a
+          >
+
+          <a href="Work/tweetGuard.html"
+            ><img id="thumbnail" src="Assets/TweetGuardHeader.png" />
+            <h2>TweeGuard</h2>
+            <h3>UX/UI</h3></a
+          >
+        </div>
+
+        <div id="row">
+          <a href="Work/Intimo.html"
+            ><img id="thumbnail" src="Assets/IntimoHeader.png" />
+            <h2>Intimo</h2>
+            <h3>Developer</h3></a
+          >
+
+          <a href="Work/FrenchFryFunFacts.html"
+            ><img id="thumbnail" src="Assets/FriesHeader.png" />
+            <h2>French Fry Fun Fact Booklet</h2>
+            <h3>Visual Designer</h3></a
+          >
+        </div>
       </div>
     </div>
 
-    <div id="thumbnail-container">
-      <div id="row">
-        <a href="Work/campusFacilities.html"
-          ><img id="thumbnail" src="Assets/campusFacilitiesHeader.png" />
-          <h2>Campus Facilities @ The New School</h2>
-          <h3>UX/UI</h3></a
-        >
-
-        <a href="Work/tweetGuard.html"
-          ><img id="thumbnail" src="Assets/TweetGuardHeader.png" />
-          <h2>TweeGuard</h2>
-          <h3>UX/UI</h3></a
-        >
+    <!-- <div id="footer">
+        <h4>Get in touch!</h4>
+        <p>isabelanguera2@gmail.com</p>
+        <p>(434) 907-2508</p>
       </div>
+    </div> -->
 
-      <div id="row">
-        <a href="Work/Intimo.html"
-          ><img id="thumbnail" src="Assets/IntimoHeader.png" />
-          <h2>Intimo</h2>
-          <h3>Developer</h3></a
-        >
-
-        <a href="Work/FrenchFryFunFacts.html"
-          ><img id="thumbnail" src="Assets/FriesHeader.png" />
-          <h2>French Fry Fun Fact Booklet</h2>
-          <h3>Visual Designer</h3></a
-        >
-      </div>
+    <div id="myMenu" class="verticalMenu">
+      <a href="#">Contact Me</a>
+      <a href="#">Resumé</a>
+      <a href="#">Colophon</a>
     </div>
 
-    <div id="footer">
-      <h4>Get in touch!</h4>
-      <p>isabelanguera2@gmail.com</p>
-      <p>(434) 907-2508</p>
-    </div>
+    <script>
+      function showMenu() {
+        document
+          .getElementById("menuContainer")
+          .classList.toggle("animateHamburger");
+        document.getElementById("myMenu").classList.toggle("openMenu");
+        document.getElementById("main").classList.toggle("moveOver");
+      }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+    <script src="bgSketch.js"></script>
   </body>
 </html>
