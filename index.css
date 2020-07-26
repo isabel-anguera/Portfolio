@@ -16,7 +16,7 @@ body {
 h1 {
   text-transform: uppercase;
   font-weight: 300;
-  font-size: 2.5em;
+  font-size: 2em;
   margin-left: 20%;
   white-space: nowrap;
 }
@@ -100,13 +100,12 @@ h1 {
 }
 
 .startState {
-  margin-left: 0;
+  margin: 0;
   transition: 0.4s;
 }
 
 .moveOver {
   margin-left: 30%;
-  filter: drop-shadow(-5px 5px 10px silver);
 }
 
 h2 {
