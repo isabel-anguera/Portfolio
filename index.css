@@ -1,7 +1,7 @@
 body {
-  /* font-family: "Avenir Next"; */
   font-family: "Gill Sans";
   margin: 0;
+  overflow-x: hidden;
 }
 
 .header {
@@ -16,7 +16,7 @@ body {
 h1 {
   text-transform: uppercase;
   font-weight: 300;
-  font-size: 2em;
+  font-size: 7vw;
   margin-left: 20%;
   white-space: nowrap;
 }
@@ -24,7 +24,7 @@ h1 {
 .menuIconContainer {
   display: inline-block;
   cursor: pointer;
-  margin-top: 78%;
+  margin-top: 62%;
 }
 .topBar {
   width: 25px;
