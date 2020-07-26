@@ -19,12 +19,14 @@ h1 {
   font-size: 7vw;
   margin-left: 20%;
   white-space: nowrap;
+  max-width: 80%;
 }
 
 .menuIconContainer {
   display: inline-block;
   cursor: pointer;
   margin-top: 62%;
+  max-width: 20%;
 }
 .topBar {
   width: 25px;
