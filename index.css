@@ -17,16 +17,18 @@ h1 {
   text-transform: uppercase;
   font-weight: 300;
   font-size: 7vw;
-  margin-left: 20%;
+  margin-left: 15%;
   white-space: nowrap;
-  max-width: 80%;
+  max-width: 70%;
+  position: fixed;
 }
 
 .menuIconContainer {
   display: inline-block;
   cursor: pointer;
   margin-top: 62%;
-  max-width: 20%;
+  max-width: 15%;
+  position: relative;
 }
 .topBar {
   width: 25px;
