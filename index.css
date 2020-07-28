@@ -70,7 +70,7 @@ h1 {
 .verticalMenu a {
   text-transform: uppercase;
   font-weight: 300;
-  font-size: 1.2em;
+  font-size: 1em;
   display: block;
   padding: 7%;
   transition: 0.4s;
