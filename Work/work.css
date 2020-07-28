@@ -301,4 +301,14 @@ video {
   #TOC {
     display: none;
   }
+
+  #intimoURL {
+    font-size: 2.5em;
+    margin: 5% auto 9% auto;
+  }
+
+  #intimoURL a:hover {
+    background-color: #ffff60;
+    padding: 2%;
+  }
 }
