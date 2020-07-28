@@ -2,44 +2,51 @@ html {
   scroll-behavior: smooth;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: "Avenir Next";
+  font-family: "Gill Sans";
+  height: 100%;
 }
 
 h1 {
   font-style: italic;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 4vw;
+  font-weight: 600;
 }
 
 h2 {
-  font-weight: normal;
-  font-size: 1.2em;
+  font-weight: 300;
+  font-size: 3vw;
   text-align: center;
 }
 
 h3 {
   font-style: italic;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 h4 {
   font-style: italic;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 0;
 }
 
 h5 {
   color: red;
   font-style: italic;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 0.9em;
   margin-bottom: 0;
 }
 
 p {
   line-height: 1.6;
+  font-weight: 300;
 }
 
 img {
@@ -53,17 +60,37 @@ ul {
   margin-top: 2%;
 }
 
+li {
+  font-weight: 300;
+}
+
 a {
   color: black;
 }
 
 a:hover {
-  filter: blur(4px);
+  filter: drop-shadow(-5px 5px 5px silver);
 }
 
 #header {
   width: 100%;
   margin-top: 0;
+}
+
+#backBtn {
+  position: absolute;
+  text-decoration: line-through;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  color: black;
+  font-weight: 300;
+  padding: 2%;
+  top: 2%;
+  left: 2%;
+}
+
+#backBtn:active {
+  text-decoration: none;
 }
 
 #TOC {
@@ -117,6 +144,16 @@ a:hover {
   text-align: center;
 }
 
+#footer p {
+  font-size: 1.1em;
+}
+
+#social-media-icon {
+  width: 5%;
+  margin-right: 2%;
+  padding-top: 2%;
+}
+
 video {
   width: 100%;
 }
@@ -128,4 +165,37 @@ video {
   font-style: italic;
   color: #ef3f45;
   margin: 15% auto 20% auto;
+}
+
+@media (min-width: 768px) {
+  #backBtn:hover {
+    text-decoration: none;
+  }
+
+  h1 {
+    font-size: 3vw;
+  }
+
+  h2 {
+    font-size: 2vw;
+  }
+
+  #TOC {
+    display: none;
+  }
+
+  #footer {
+    margin-top: 5%;
+    padding: 2% 0.5%;
+  }
+
+  #social-media-bar {
+    margin-top: 2%;
+  }
+
+  #social-media-icon {
+    width: 4%;
+    padding: 0.25%;
+    margin-top: 0;
+  }
 }
