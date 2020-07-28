@@ -9,56 +9,25 @@
   <body>
     <div id="main" class="startState">
       <div class="header">
-        <div id="row">
-          <div id="column">
-            <div
-              id="menuContainer"
-              class="menuIconContainer"
-              onclick="showMenu()"
-            >
-              <div class="topBar"></div>
-              <div class="middleBar"></div>
-              <div class="bottomBar"></div>
-            </div>
-          </div>
-
-          <div id="column">
-            <h1>Isabel Anguera</h1>
-          </div>
+        <div id="menuContainer" class="menuIconContainer" onclick="showMenu()">
+          <div class="topBar"></div>
+          <div class="middleBar"></div>
+          <div class="bottomBar"></div>
         </div>
+
+        <div class="pages">
+          <h5><a href="contact-me.html">Contact Me</a></h5>
+          <h5><a href="resume.html">Resumé</a></h5>
+        </div>
+
+        <h1>Isabel Anguera</h1>
       </div>
 
       <div id="bioBlurb">
-        <p>
-          Say something about myself here. What I do, what my status is, what I
-          am like, etc. Make it interesting but short
+        <p id="blurb">
+          Hi, welcome to my portfolio!
         </p>
       </div>
-
-      <!-- <div id="pages">
-        <h5><a href="AboutMe.html">About Me</a></h5>
-
-        <h5><a href="Colophon.html">Colophon</a></h5>
-      </div>
-
-      <span id="social-media-bar">
-        <a href="https://www.facebook.com/isabel.anguera.5"
-          ><img id="social-media-icon" src="Assets/facebook-icon.png"
-        /></a>
-
-        <a href="https://www.instagram.com/isabel.anguera/"
-          ><img id="social-media-icon" src="Assets/instagram-icon.png"
-        /></a>
-
-        <a href="https://www.linkedin.com/in/isabel-anguera/"
-          ><img id="social-media-icon" src="Assets/linkedin-icon.png"
-        /></a>
-
-        <a href="https://twitter.com/itsisabel22"
-          ><img id="social-media-icon" src="Assets/twitter-icon.png" />
-        </a>
-      </span>
-    </div> -->
 
       <div id="thumbnail-container">
         <div id="row">
@@ -89,14 +58,29 @@
           >
         </div>
       </div>
-    </div>
 
-    <!-- <div id="footer">
-        <h4>Get in touch!</h4>
+      <div id="footer">
+        <div id="social-media-bar">
+          <a href="https://www.facebook.com/isabel.anguera.5"
+            ><img id="social-media-icon" src="Assets/facebook-icon.png"
+          /></a>
+
+          <a href="https://www.instagram.com/isabel.anguera/"
+            ><img id="social-media-icon" src="Assets/instagram-icon.png"
+          /></a>
+
+          <a href="https://www.linkedin.com/in/isabel-anguera/"
+            ><img id="social-media-icon" src="Assets/linkedin-icon.png"
+          /></a>
+
+          <a href="https://twitter.com/itsisabel22"
+            ><img id="social-media-icon" src="Assets/twitter-icon.png" />
+          </a>
+        </div>
         <p>isabelanguera2@gmail.com</p>
         <p>(434) 907-2508</p>
       </div>
-    </div> -->
+    </div>
 
     <div id="myMenu" class="verticalMenu">
       <a href="#">Contact Me</a>
@@ -114,7 +98,19 @@
       }
     </script>
 
+    <script>
+      let blurbOptions = [
+        "Hi, welcome to my portfolio!",
+        "UX/UI and fun web dev projects are my jam!",
+        "Design and Technology major at Parsons School of Design :)",
+      ];
+
+      let blurbContent =
+        blurbOptions[Math.floor(Math.random() * blurbOptions.length)];
+      document.getElementById("blurb").innerHTML = blurbContent;
+    </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
-    <!-- <script src="bgSketch.js"></script> -->
+    <script src="bgSketch.js"></script>
   </body>
 </html>
