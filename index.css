@@ -29,6 +29,7 @@ h1 {
   cursor: pointer;
   margin-top: 6%;
   position: absolute;
+  margin-right: 2%;
 }
 .topBar {
   width: 4vw;
@@ -64,8 +65,8 @@ h1 {
   width: 3vw;
 }
 
-.animatedHamburger h1 {
-}
+/* .animatedHamburger h1 {
+} */
 
 .verticalMenu a {
   text-transform: uppercase;
