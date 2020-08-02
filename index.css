@@ -17,7 +17,7 @@ body {
 h1 {
   text-transform: uppercase;
   font-weight: 300;
-  font-size: 2em;
+  font-size: 6vw;
   float: right;
   margin-top: 8%;
   margin-right: 0;
@@ -64,7 +64,6 @@ h1 {
 }
 
 .animatedHamburger h1 {
-  font-size: 1.5em;
 }
 
 .verticalMenu a {
