@@ -30,7 +30,6 @@ h1 {
   cursor: pointer;
   margin-top: 6%;
   position: absolute;
-  background-color: #ffffff80;
   padding: 2%;
 }
 .topBar {
@@ -57,14 +56,17 @@ h1 {
 
 .animateHamburger .topBar {
   width: 3vw;
+  transform: translateX(-20px);
 }
 
 .animateHamburger .middleBar {
   width: 3vw;
+  transform: translateX(-20px);
 }
 
 .animateHamburger .bottomBar {
   width: 3vw;
+  transform: translateX(-20px);
 }
 
 .verticalMenu a {
