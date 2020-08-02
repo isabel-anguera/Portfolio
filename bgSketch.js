@@ -13,7 +13,7 @@ function setup() {
   noStroke();
   colorMode(HSB);
   rectMode(CENTER);
-  frameRate(3);
+  frameRate(2);
 
   randomColor = random(190, 230);
 }
