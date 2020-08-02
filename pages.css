@@ -6,7 +6,7 @@ body {
 h1 {
   text-transform: uppercase;
   font-weight: 300;
-  margin-top: 10%;
+  margin-top: 15%;
   text-align: center;
 }
 
@@ -64,6 +64,7 @@ a:hover {
   margin-top: 5%;
   padding: 4% 0;
   text-align: center;
+  line-height: 1.5;
 }
 
 #footer p {
@@ -92,6 +93,10 @@ a:hover {
 @media (min-width: 768px) {
   body {
     margin: 0 auto;
+  }
+
+  h1 {
+    margin-top: 10%;
   }
   #backBtn:hover {
     text-decoration: none;
