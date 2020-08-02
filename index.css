@@ -21,6 +21,7 @@ h1 {
   float: right;
   margin-top: 8%;
   margin-right: 0;
+  margin-left: 5%;
   white-space: nowrap;
 }
 
@@ -29,7 +30,6 @@ h1 {
   cursor: pointer;
   margin-top: 6%;
   position: absolute;
-  margin-right: 2%;
 }
 .topBar {
   width: 4vw;
@@ -64,9 +64,6 @@ h1 {
 .animateHamburger .bottomBar {
   width: 3vw;
 }
-
-/* .animatedHamburger h1 {
-} */
 
 .verticalMenu a {
   text-transform: uppercase;
