@@ -167,6 +167,10 @@ video {
   margin: 15% auto 20% auto;
 }
 
+#ff-digitalPages {
+  box-shadow: -5px 5px 15px silver;
+}
+
 @media (min-width: 768px) {
   #backBtn:hover {
     text-decoration: none;
@@ -310,5 +314,9 @@ video {
   #intimoURL a:hover {
     background-color: #ffff60;
     padding: 2%;
+  }
+
+  #ff-digitalPages {
+    box-shadow: none;
   }
 }
