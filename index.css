@@ -55,19 +55,19 @@ h1 {
 
 .animateHamburger .topBar {
   /* width: 3vw; */
-  background-color: slategrey;
+  background-color: goldenrod;
   transform: translateX(-20px);
 }
 
 .animateHamburger .middleBar {
   /* width: 3vw; */
-  background-color: slategrey;
+  background-color: tomato;
   transform: translateX(-20px);
 }
 
 .animateHamburger .bottomBar {
   /* width: 3vw; */
-  background-color: slategrey;
+  background-color: greenyellow;
   transform: translateX(-20px);
 }
 
