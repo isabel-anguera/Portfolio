@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap");
+
 body {
-  font-family: "Gill Sans";
+  font-family: "Lato";
   margin: 0;
   overflow-x: hidden;
 }
@@ -122,6 +124,7 @@ h1 {
 #bioBlurb p {
   line-height: 1.7;
   font-size: 1em;
+  font-weight: 300;
   width: 80%;
   margin: 2% auto 5% auto;
   text-shadow: -5px 5px 3px goldenrod;
@@ -152,7 +155,7 @@ h5 {
 }
 
 p {
-  font-weight: lighter;
+  font-weight: 300;
 }
 
 a {
@@ -174,7 +177,6 @@ a:active {
 }
 
 #footer {
-  background-color: #f5f5f5;
   margin-bottom: 0;
   margin-top: 20%;
   padding: 4% 0;
@@ -235,7 +237,7 @@ a:active {
     text-shadow: -5px 5px 3px goldenrod;
     text-align: center;
     background-color: #ffff60;
-    padding: 0.5% 0.25% 1% 0.25%;
+    padding: 1% 0.25%;
   }
 
   .menuIconContainer {
