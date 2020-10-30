@@ -127,7 +127,9 @@ h1 {
   font-weight: 300;
   width: 80%;
   margin: 2% auto 5% auto;
-  text-shadow: -5px 5px 3px goldenrod;
+  background-color: #ffff60;
+  padding: 1%;
+  /* text-shadow: -5px 5px 3px goldenrod; */
 }
 
 h2 {
@@ -235,7 +237,7 @@ a:active {
     font-size: 1.2em;
     /* width: 85%; */
     margin: 0 auto;
-    text-shadow: -5px 5px 3px goldenrod;
+    /* text-shadow: -5px 5px 3px goldenrod; */
     text-align: center;
     background-color: #ffff60;
     padding: 1% 0.25%;
