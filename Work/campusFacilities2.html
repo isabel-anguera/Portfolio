@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="work2.css" />
+    <link rel="icon" type="image/png" href="../Assets/favicon.png" />
+    <title>Campus Facilities</title>
+</head>
+<body>
+    <div id = "section0" style = "position: absolute"></div>
+    <ul id = "topNav">
+        <li><a id= "home" href = "../index.html">IA.</a></li>
+        <li><a id= "navButton" href = "../resume.html">Resume</a></li>
+        <li><a id= "navButton" href = "../about-me.html">About</a></li>
+    </ul>
+    
+    <img id = "header" src="Assets/CampusFacilities/Header2.png" />
+
+    <div id = "stickyTOC">
+        <h6 onclick= "hideTOC()">← Hide</h6>
+        <h5>Table of Contents</h5>
+        <ul id = "toc">
+            <li id = "tocItem"><a href=#section0>Top.</a></li>
+            <li id = "tocItem"><a href=#section1>The Goal.</a></li>
+            <li id = "tocItem"><a href = "#section2">The Users.</a></li>
+            <li id = "tocItem"><a href = "#section3">The Flow.</a></li>
+            <li id = "tocItem"><a href = "#section4">The Pain Points.</a></li>
+            <li id = "tocItem"><a href = "#section5">The Design Choices.</a></li>
+            <li id = "tocItem"><a href = "#section6">The Takeaways.</a></li>
+            <li id = "tocItem"><a href = "../index.html">Home.</a></li>
+        </ul>
+    </div>
+
+    <div id = "hiddenTOC" onclick="openTOC()">
+        <p>〉</p>
+    </div>
+
+        <p id = "section1"><span>The Goal</span><br>Improving the way campus facilities at The New School are reported broken and how those reports are received by maintenance. </p>
+
+        <img id = "section2" src = "Assets/CampusFacilities/users.png">
+
+        <p id = "section3">Alicia and Thomas would both benefit from a change being made to the current system. </p>
+        <img src = "Assets/CampusFacilities/flow2.png">
+        <img id = "section4" src = "Assets/CampusFacilities/painPoints.png">
+        
+        <p id = "section5"><span>Design Choices</span><br>To make reporting easy for students and faculty to find, I wanted to incorporate the new platform into The New School app, which many students already have downloaded. With that, an online counterpart so that the app is not a necessity.</p>
+        <img src = "Assets/CampusFacilities/implementation2.png">
+        
+        <p> Once they’ve made it to the platform, I wanted the form to be easy and quick to fill out. To do this, there are few questions, some of which are optional, and that allow for as much expansion as one wants, though do not require it. The questions are also all on one page so that the reporter can see an overview of their report and change things without leaving the page.</p>
+        <img id= "gif" src = "Assets/CampusFacilities/Reporting.gif">
+
+        <p>The previous portal was muted and unfriendly, so for the new reporting platform I carried over school colors to match the interface of the school app and website, and made it more visual, designing icons correlating to each of the school building’s iconic facades. </p>
+        <img src = "Assets/CampusFacilities/friendly2.png">
+
+        <p>For the maintenance side, the most important thing was making it an easy transition from one platform to another. Because the system worked fairly well already, I wanted the information from each report to be the same, but to make it a more pleasant and customizable experience for those receiving them. This format also works on the go so that reports can be seen without having to take a trip back to the office. </p>
+        <img src = "Assets/CampusFacilities/reports.png">
+
+        <p>In terms of the visual experience, I wanted the interface for the maintenance side of the platform to be as friendly and clean as the reporting end. I wanted to avoid formatting defaults and carry the building icons and school colors into this interface as well.</p>
+        <img id = "gif" src = "Assets/CampusFacilities/maintenance.gif">
+
+        <p>Lastly, in the reports list, I wanted to allow for customization in how the reports are organized. One can view reports by room or floor, order them by urgency, or choose to only display reports from a specific building at a time.</p>
+        <img src = "Assets/CampusFacilities/customizable.png">
+
+        <p id = "section6"><span>Takeaways</span><br>After working on this project, I started thinking about the dangers of having something like reporting campus facilities being too easy to find and do. There is a fine line with these kinds of things because you wouldn't want to overwhelm maintenance with tons of reports, especially if they start doubling up. Having thought of this, implementing a sort of scraper that could identify 'double' reports would be an interesting addition to the maintenance side of this platform. Another takeaway from this is the importance of user research—I am sure that if I had the resources to do multiple rounds of user testing, the platform could be optimized further.</p>
+
+        <div id = "moreWork">
+			<ul>
+                <li><a href = "FrenchFryFunFacts2.html">← Last Project</a></li>
+			    <li><a id = "main" href = "../index.html"> Work </a></li>
+			    <li><a href = "tweetGuard2.html">Next Project →</a></li>
+            </ul>
+        </div>
+
+        <div id="footer" style = "background-color:#caedff">
+            <div id="social-media-bar">
+              <a href="https://www.facebook.com/isabel.anguera.5"
+                ><img id="social-media-icon" src="Assets/facebook-icon.png"
+              /></a>
+      
+              <a href="https://www.instagram.com/isabel.anguera/"
+                ><img id="social-media-icon" src="Assets/instagram-icon.png"
+              /></a>
+      
+              <a href="https://www.linkedin.com/in/isabel-anguera/"
+                ><img id="social-media-icon" src="Assets/linkedin-icon.png"
+              /></a>
+      
+              <a href="https://twitter.com/itsisabel22"
+                ><img id="social-media-icon" src="Assets/twitter-icon.png" />
+              </a>
+            </div>
+            <p id="contactInfo">isabelanguera2@gmail.com</p>
+            <p id="contactInfo">(434) 907-2508</p>
+          </div>
+        </div>
+    
+
+        <script>
+            var toc = document.getElementById("stickyTOC");
+            var tocExpandButton = document.getElementById("hiddenTOC");
+
+            function hideTOC() {
+                toc.style.display = "none";
+                tocExpandButton.style.display = "block";
+            }
+
+            function openTOC() {
+                tocExpandButton.style.display = "none";
+                toc.style.display = "block";
+            }
+            
+
+        </script>
+    </body>
+</html>
