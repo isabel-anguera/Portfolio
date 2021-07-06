@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="work.css" />
     <link rel="icon" type="image/png" href="../Assets/favicon.png" />
-    <title>Woven Data</title>
+    <title>BFA DT Archive</title>
 </head>
 <body>
     <div id = "section0" style = "position: absolute"></div>
@@ -15,7 +15,7 @@
         <li><a id= "navButton" href = "../about-me.html">About</a></li>
     </ul>
     
-    <img id = "header" src="Assets/TweetGuard/Header.png" />
+    <img id = "header" src="Assets/BFADTArchive/header.png" />
 
     <div id = "stickyTOC">
         <h6 onclick= "hideTOC()">← Hide</h6>
@@ -36,28 +36,40 @@
         <p>〉</p>
     </div>
 
-        <p id = "section1"><span>The Project</span><br>Compile an archive and manageable system to maintain and grow said archive to be used for the undergraduate level Design and Technology department at Parsons School of Design.</p>
+        <p id = "caption">Disclaimer: In order to preserve the privacy of the students whose work was archived, I have replaced the content within screenshots with a single project repeated over and over.</p>
 
-        <p id = "section2"><span>My Role</span><br>For this project, I took lead on creating the input system for adding new submissions to the archive. This was done using a form users would submit, and translating their responses into a navigable archive. </p>
-        <!-- <img src = " ADD OUR LITTLE GROUP JUSTIN, YUEN, AND ME AND OUR ROLES"> -->
+        <p id = "section1"><span>The Project</span><br>Compile an archive of student work from and for the BFA Design and Technology (DT) department at Parsons School of Design, and set up a manageable system to maintain and grow the archive without external, tenuous intervention.</p>
+
+        <p id = "section2"><span>The Team + My Role</span><br>For this project, I worked with another student and a faculty member to complete the project. I took lead on creating the archive submission form and translating the gathered information into our visual, interactive archive.</p>
+        <img src = "Assets/BFADTArchive/team.png">
 
 
-        <p id = "section3"><span>The Users</span><br>Our very lovely users, and those interacting with both the archive and its submission method are BFADT Design and Technology (DT for short) students, each of whom is required to take 1-3 spefically DT classes each semester, depending on their year. In these classes, each student will create a number of projects which they will be encouraged to submit to the archive.</p>
+        <p id = "section3"><span>The Users</span><br>Our very lovely users, and those interacting with both the archive and its submission method are BFA DT students, each of whom is required to take 1-3 spefically DT classes each semester, depending on their year. In these classes, each student will create a number of projects which they will be encouraged to submit to the archive.</p>
+        <img src = "Assets/BFADTArchive/user.png">
+        <p>BFA DT students however, after the first version of this form was sent out were hesitant to share their work, or give permissions to the school to do as they please with it. In order to convince them to add their work to our internal archive so that it can be learned from and used as reference of resource for other students that come after them, it is important to earn their trust through transparency, and to ensure that they know this is an optional thing.</p>
 
-        <p>BFADT students however, are also generally weary about sharing their work, or giving permissions to the school to do as they please with it. In order to convince them to add their work to our internal archive so that it can be learned from and used as reference of resource for other students that come after them, it is important to earn their trust through transparency, and to ensure that they know this is an optional thing.</p>
+        <p id = "section4"><span>The Process</span><br>The first step in this project was to circulate and compile the work from a first form given to us pre-written by the department and school.</p>
+        <img src = "Assets/BFADTArchive/form1.png"> 
+       
+        <p>With this initial feedback and what we saw in the first pass at organizing the results, we started with prioritizing our users and how they might respond to and use this archive. Step two involved thinking ahead to how this might be implemented, and step three was to choose the best tools for our newly specified needs.</p>  
+        
+        <p> Some of our takeaways and priorities became:</p>
+        <img src = "Assets/BFADTArchive/takeaways.png">
 
-        <p id = "section4"><span>The Process</span><br>Step one was to think about our users and how they might respond to and use this archive. Step two involved thinking ahead to how this might be implemented, and step three was to choose the best tools for our newly specified needs.</p>  
-        <!-- <img src = ADD DIAGRAM OF PROCESS (USERS, IMPLEMENTATION, TOOLS, FORM+DATABASE+ARCHIVE)>  -->
+        <p id = "section5"><span>The Results</span><br>Our results were the following form, and archive. We wanted to keep the question, "What is the minimum effort we can ask for from the students that will give us the highest value for the archive?" in mind.</p>  
+        <img id = "gif" src = "Assets/BFADTArchive/form.gif">
+        <img src = "Assets/BFADTArchive/archive.png">
 
-        <p id = "section5"><span>The Results</span><br> After the hackathon I wanted to expand on aspects of the project. I decided to think of an implementation within Twitter itself so that users didn’t have to navigate to the tool site in order to benefit from it. This comes in the form of a browser extension that when enacted shows a warning on tweets that may contain misinformation or accounts that are potential bots. </p>  
+        <p>From the form to the archive, the content filters as follows:</p>
+        <img src = "Assets/BFADTArchive/translation.png">
 
-        <p id = "section8"><span>Takeaways</span><br>From mentor feedback one of the things that I realized would be a huge pain point in TweetGuard was the fact that our page had to be seeked out. While there are some people who might be interested in finding out the information we give, they might not come back more than that one time. Implementing TweetGuard in a more continuous way, such as in an extension or even working with Twitter itself would allow people to have a more beneficial back and forth with their Twitter network. This is true for both TweetGuard and tools like it, which is something to think about for future projects.</p>
+        <p id = "section8"><span>Takeaways</span><br>While not a UX project specifically, the systems thinking happening with this project was a good way to apply elements of UX flows, user stories, and translating action into a front end that filters certain content out that is not necessary in different views, or for varying purposes. </p>
 
         <div id = "moreWork">
 			<ul>
-                <li><a href = "campusFacilities.html">← Last Project</a></li>
+                <li><a href = "FrenchFryFunFacts.html">← Last Project</a></li>
 			    <li><a id = "main" href = "../index.html"> Work </a></li>
-			    <li><a href = "MatBuddy.html">Next Project →</a></li>
+			    <li><a href = "campusFacilities.html">Next Project →</a></li>
             </ul>
         </div>
 

@@ -107,6 +107,13 @@ p a:hover {
   text-decoration: underline;
 }
 
+#caption {
+  background-color: whitesmoke;
+  font-weight: normal;
+  margin-bottom: 0;
+  padding: 2%;
+}
+
 /* ////////////////////////////////////////// */
 
 #stickyTOC {
