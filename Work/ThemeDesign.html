@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="work.css" />
+    <link rel="icon" type="image/png" href="../Assets/favicon.png" />
+    <title>OnePlus: Theme Design</title>
+</head>
+<body>
+    <div id = "section0" style = "position: absolute"></div>
+    <ul id = "topNav">
+        <li><a id= "home" href = "../index.html">IA.</a></li>
+        <li><a id= "navButton" href = "../resume.html">Resume</a></li>
+        <li><a id= "navButton" href = "../about-me.html">About</a></li>
+    </ul>
+    
+    <img id = "header" src="Assets/BFADTArchive/header.png" />
+
+    <div id = "stickyTOC">
+        <h6 onclick= "hideTOC()">← Hide</h6>
+        <h5>Table of Contents</h5>
+        <ul id = "toc">
+            <li id = "tocItem"><a href=#section0>Top.</a></li>
+            <li id = "tocItem"><a href=#section1>The Project.</a></li>
+            <li id = "tocItem"><a href = "#section2">The Collaboration.</a></li>
+            <li id = "tocItem"><a href = "#section3">The Users.</a></li>
+            <li id = "tocItem"><a href = "#section4">The Process.</a></li>
+            <li id = "tocItem"><a href = "#section5">The Results.</a></li>
+            <li id = "tocItem"><a href = "#section6">The Takeaways.</a></li>
+            <li id = "tocItem"><a href = "../index.html">Home.</a></li>
+        </ul>
+    </div>
+
+    <div id = "hiddenTOC" onclick="openTOC()" alt="Open TOC" style = "background-color: #dbdbdb ">
+        <p>〉</p>
+    </div>
+
+        <p id = "caption">Disclaimer: In order to preserve the privacy of the students whose work was archived, I have replaced the content within screenshots with a single project repeated over and over.</p>
+
+        <p id = "section1"><span>The Project</span><br>Compile an archive of student work from and for the BFA Design and Technology (DT) department at Parsons School of Design, and set up a manageable system to maintain and grow the archive without external, tenuous intervention.</p>
+
+        <p id = "section2"><span>The Team + My Role</span><br>For this project, I worked with another student and a faculty member to complete the project. I took lead on creating the archive submission form and translating the gathered information into our visual, interactive archive.</p>
+        <img src = "Assets/BFADTArchive/team.png">
+
+
+        <p id = "section3"><span>The Users</span><br>Our very lovely users, and those interacting with both the archive and its submission method are BFA DT students, each of whom is required to take 1-3 spefically DT classes each semester, depending on their year. In these classes, each student will create a number of projects which they will be encouraged to submit to the archive.</p>
+        <img src = "Assets/BFADTArchive/user.png">
+        <p>BFA DT students however, after the first version of this form was sent out were hesitant to share their work, or give permissions to the school to do as they please with it. In order to convince them to add their work to our internal archive so that it can be learned from and used as reference of resource for other students that come after them, it is important to earn their trust through transparency, and to ensure that they know this is an optional thing.</p>
+
+        <p id = "section4"><span>The Process</span><br>The first step in this project was to circulate and compile the work from a first form given to us pre-written by the department and school.</p>
+        <img src = "Assets/BFADTArchive/form1.png"> 
+       
+        <p>With this initial feedback and what we saw in the first pass at organizing the results, we started with prioritizing our users and how they might respond to and use this archive. Step two involved thinking ahead to how this might be implemented, and step three was to choose the best tools for our newly specified needs.</p>  
+        
+        <p> Some of our takeaways and priorities became:</p>
+        <img src = "Assets/BFADTArchive/takeaways.png">
+
+        <p id = "section5"><span>The Results</span><br>Our results were the following form, and archive. We wanted to keep the question, "What is the minimum effort we can ask for from the students that will give us the highest value for the archive?" in mind.</p>  
+        <img id = "gif" src = "Assets/BFADTArchive/form.gif">
+        <img src = "Assets/BFADTArchive/archive.png">
+
+        <p>From the form to the archive, the content filters as follows:</p>
+        <img src = "Assets/BFADTArchive/translation.png">
+
+        <p id = "section8"><span>Takeaways</span><br>While not a UX project specifically, the systems thinking happening with this project was a good way to apply elements of UX flows, user stories, and translating action into a front end that filters certain content out that is not necessary in different views, or for varying purposes. </p>
+
+        <div id = "moreWork">
+			<ul>
+                <li><a href = "FrenchFryFunFacts.html">← Last Project</a></li>
+			    <li><a id = "main" href = "../index.html"> Work </a></li>
+			    <li><a href = "campusFacilities.html">Next Project →</a></li>
+            </ul>
+        </div>
+
+        <div id="footer" style = "background-color:#D0BBDD">
+            <div id="social-media-bar">
+              <a href="https://www.facebook.com/isabel.anguera.5"
+                ><img id="social-media-icon" src="Assets/facebook-icon.png"
+              /></a>
+      
+              <a href="https://www.instagram.com/isabel.anguera/"
+                ><img id="social-media-icon" src="Assets/instagram-icon.png"
+              /></a>
+      
+              <a href="https://www.linkedin.com/in/isabel-anguera/"
+                ><img id="social-media-icon" src="Assets/linkedin-icon.png"
+              /></a>
+      
+              <a href="https://twitter.com/itsisabel22"
+                ><img id="social-media-icon" src="Assets/twitter-icon.png" />
+              </a>
+            </div>
+            <p id="contactInfo">isabelanguera2@gmail.com</p>
+            <p id="contactInfo">(434) 907-2508</p>
+          </div>
+        </div>
+    
+
+        <script>
+            var toc = document.getElementById("stickyTOC");
+            var tocExpandButton = document.getElementById("hiddenTOC");
+
+            function hideTOC() {
+                toc.style.display = "none";
+                tocExpandButton.style.display = "block";
+                
+            }
+
+            function openTOC() {
+                tocExpandButton.style.display = "none";
+                toc.style.display = "block";
+            }
+            
+
+        </script>
+    </body>
+</html>

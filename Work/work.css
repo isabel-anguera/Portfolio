@@ -76,8 +76,8 @@ span {
 }
 
 #gif {
-  width: 40%;
-  margin: 0 30%;
+  width: 30%;
+  margin: 0 35%;
 }
 
 .row {
@@ -86,6 +86,19 @@ span {
   width: 94%;
   margin-left: 3%;
   padding: 3% 0;
+}
+
+.rowCF {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  padding: 3% 0;
+}
+
+.columnCF {
+  flex: 50%;
+  width: 50%;
+  margin: auto;
 }
 
 .column {
@@ -228,4 +241,11 @@ h6:hover {
   text-align: center;
   padding: 0 0 1% 0;
   font-weight: normal;
+}
+
+@media (max-width: 768px) {
+  p {
+    width: 80%;
+    text-align: left;
+  }
 }
