@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project.css" />
+    <title>Project Title</title>
+</head>
+<body>
+    <div id="main" class="startState">
+        <div class="header">
+          <nav>
+            <ul>
+                <li><a href = "index.html" class="logo">Isabel Anguera.</a></li>
+                <li class="page-link"><a href = "#">Figma Playground</a></li>
+                <li class="page-link"><a href = "#">Resume</a></li>
+                <li class="page-link"><a href = "#">About  Me</a></li>
+            </ul>
+        </nav>
+  
+        <div id="menuContainer" class="menuIconContainer" onclick="showMenu()">
+          <div class="topBar"></div>
+          <div class="middleBar"></div>
+          <div class="bottomBar"></div>
+        </div>
+   
+        </div>
+
+    <section class = "container">
+        <img class = "hero-img" src = "hero.png">
+        <h1>Project Title</h1>
+        <div class="row">
+            <div class="column">
+                <h2>Role: <span class="tertiary-text">UX Designer</span></h2>
+                <h2>Tools + Methods: <span class="tertiary-text">Figma, Interviews, Surveys</span></h2>
+                <h2>Deliverables: <span class="tertiary-text">High Fidelity Prototype</span></h2>
+                <h2>Collaborators: <span class="tertiary-text">Jane Smith, John Doe</span></h2>
+            </div>
+
+            <div class = "column">
+                <p>Paragraph of text that explains the project concisely but with enough detail goes here. Use hook, quick action plan, and outcomes. No need to mention details that will be visible on the left in list form.</p>
+                <button>Full Case Study</button>
+            </div>
+        </div>
+
+        <!-- <div class="centered">
+            <button>Full Case Study</button>  CENTERED BUTTON IF WANTED
+        </div> -->
+
+        <div class="row">
+            <div class="column">
+                <img src = "featured-1.png">
+            </div>
+
+            <div class = "column">
+                <p>Paragraph of text that explains the necessary details and features so that people can get a good idea of what the project is and what you did without needing to read the full case study.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <p>Paragraph of text that explains the necessary details and features so that people can get a good idea of what the project is and what you did without needing to read the full case study.</p>
+            </div>
+
+            <div class = "column">
+                <img src = "featured-2.png">
+            </div>
+        </div>
+
+        <div class="centered">
+            <div id = "home" src = "home-button.png">
+        </div>
+    </section>
+
+    <section class = "footer centered">
+        <small>isabelanguera2@gmail.com</small>
+    </section>
+
+    <div id="myMenu" class="verticalMenu">
+        <a href="about-me.html">Contact Me</a>
+        <a href="resume.html">Resumé</a>
+        <a href="figma-playground.html">Figma Playground</a>
+      </div>
+  
+      <script>
+        function showMenu() {
+          document
+            .getElementById("menuContainer")
+            .classList.toggle("animateHamburger");
+          document.getElementById("myMenu").classList.toggle("openMenu");
+          document.getElementById("main").classList.toggle("moveOver");
+        }
+      </script>
+</body>
+</html>

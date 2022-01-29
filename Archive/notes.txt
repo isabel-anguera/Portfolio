@@ -1,0 +1,7 @@
+Left to do:
+- Decide on structure for if you want a gallery of photos/screenshots 
+  instead of 2 rows of 2 columns
+- Set up folder structure so that everything can be transfered and moved easily
+- Sort out filtering for project types
+- Active sliders for pages and filtering
+- Extra pages (keep similar to current portfolio)

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Isabel Anguera</title>
+    <link rel="stylesheet" href="project.css" />
+    <link rel="icon" type="image/png" href="Assets/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <div id="main" class="startState">
+      <div class="header">
+        <nav>
+          <ul>
+              <li><a href = "index.html" class="logo">Isabel Anguera.</a></li>
+              <li class="page-link"><a href = "#">Figma Playground</a></li>
+              <li class="page-link"><a href = "#">Resume</a></li>
+              <li class="page-link"><a href = "#">About  Me</a></li>
+          </ul>
+      </nav>
+
+      <div id="menuContainer" class="menuIconContainer" onclick="showMenu()">
+        <div class="topBar"></div>
+        <div class="middleBar"></div>
+        <div class="bottomBar"></div>
+      </div>
+ 
+      </div>
+
+      <section class="container">
+
+        <div id="bioBlurb">
+          <p id="blurb">
+            Hi, welcome to my portfolio!
+          </p>
+        </div>
+
+
+        <ul class = 'tab-nav'>
+          <li><a href = "#" id="DPD" class = "tab-button active">Product Design Work</a></li>
+          <li><a href = "#" id = "MoreWork" class ="tab-button">More Work</a></li>
+        </ul>
+
+        <div id="thumbnail-container">
+          <div class="row">
+            <a href = "Work/ProjectFolder">
+            <img class = "thumbnail" src = "featured-1.png">
+            <h2>Project Title</h2>
+            <p class="tertiary-text">Role</p></a
+            >
+
+            <a href="Work/ProjectFolder"
+              ><img class = "thumbnail" src="featured-1.png" />
+              <h2>Project Title</h2>
+              <p class="tertiary-text">Role</p></a
+            >
+        </div>
+
+        <div class="row">
+          <a href="Work/ProjectFolder"
+            ><img class = "thumbnail" src="featured-1.png" />
+            <h2>Project Title</h2>
+            <p class="tertiary-text">Role</p></a
+          >
+
+          <a href="Work/ProjectFolder"
+            ><img class = "thumbnail" src="featured-1.png" />
+            <h2>Project Title</h2>
+            <p class="tertiary-text">Role</p></a
+          > 
+        </div>
+
+        <div class="row">
+          <a href = "Work/ProjectFolder"
+            ><img class = "thumbnail" src="featured-1.png" />
+            <h2>Project Title</h2>
+            <p class="tertiary-text">Role</p></a
+          >
+          
+          <a href="Work/ProjectFolder"
+            ><img class = "thumbnail" src="featured-1.png" />
+            <h2>Project Title</h2>
+            <p class="tertiary-text">Role</p></a
+          >
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+      <div class="footer centered">
+        <small>isabelanguera2@gmail.com</small>
+
+        <!-- <ul class="social-media-bar">
+          <li><a href="https://www.facebook.com/isabel.anguera.5"
+            ><img class="social-media-icon" src="../Assets/facebook-icon.png"
+          /></a></li>
+
+          <li><a href="https://www.instagram.com/isabel.anguera/"
+            ><img class="social-media-icon" src="../Assets/instagram-icon.png"
+          /></a></li>
+
+          <li><a href="https://www.linkedin.com/in/isabel-anguera/"
+            ><img class="social-media-icon" src="../Assets/linkedin-icon.png"
+          /></a></li>
+
+          <li><a href="https://twitter.com/itsisabel22"
+            ><img class="social-media-icon" src="../Assets/twitter-icon.png" />
+          </a></li>
+        </ul> -->
+
+      </div>
+
+    <div id="myMenu" class="verticalMenu">
+      <a href="about-me.html">Contact Me</a>
+      <a href="resume.html">Resumé</a>
+      <a href="figma-playground.html">Figma Playground</a>
+    </div>
+
+    <script>
+      function showMenu() {
+        document
+          .getElementById("menuContainer")
+          .classList.toggle("animateHamburger");
+        document.getElementById("myMenu").classList.toggle("openMenu");
+        document.getElementById("main").classList.toggle("moveOver");
+      }
+    </script>
+
+    <script>
+      let blurbOptions = [
+        "Hi, welcome to my portfolio!",
+        "UX/UI and fun web dev project enthusiast!",
+        "Design and Technology major at Parsons School of Design.",
+        "Check out my prototypes, projects, and presentations!", 
+        "Let's Connect!",
+      ];
+
+      let blurbContent =
+        blurbOptions[Math.floor(Math.random() * blurbOptions.length)];
+      document.getElementById("blurb").innerHTML = blurbContent;
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+    <script src="bgSketch.js"></script>
+  </body>
+</html>
