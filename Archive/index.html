@@ -37,53 +37,64 @@
 
 
         <ul class = 'tab-nav'>
-          <li><a href = "#" id="DPD" class = "tab-button active">Product Design Work</a></li>
-          <li><a href = "#" id = "MoreWork" class ="tab-button">More Work</a></li>
+          <li><a id="DPD-button" class = "tab-button active" onclick = "showDPD()">Product Design Work</a></li>
+          <li><a href = "#" id = "MoreWork-button" class ="tab-button" onclick = "showMore()">More Work</a></li>
         </ul>
 
         <div id="thumbnail-container">
-          <div class="row">
-            <a href = "Work/OnePlusThemeDesign">
-            <img class = "thumbnail" src = "OnePlusThemeDesign/thumbnail.png">
-            <h2>OnePlus Themed Interface</h2>
-            <p class="tertiary-text">UI Designer</p></a
-            >
+          <div id = "DPD-Work" class = "showing">
+            <div class="row">
+              <a href = "OnePlusThemeDesign">
+              <img class = "thumbnail" src = "OnePlusThemeDesign/thumbnail.png">
+              <h2>OnePlus Themed Interface</h2>
+              <p class="tertiary-text">UI Designer</p></a
+              >
 
-            <a href="Work/MatBuddy"
-              ><img class = "thumbnail" src="MatBuddy/thumbnail.png" />
-              <h2>MatBuddy</h2>
-              <p class="tertiary-text">Product Designer</p></a
-            >
-        </div>
+              <a href="MatBuddy"
+                ><img class = "thumbnail" src="MatBuddy/thumbnail.png" />
+                <h2>MatBuddy</h2>
+                <p class="tertiary-text">Product Designer</p></a
+              >
+            </div>
 
-        <div class="row">
-          <a href="Work/TweetGuard"
-            ><img class = "thumbnail" src="TweetGuard/thumbnail.png" />
-            <h2></h2>
-            <p class="tertiary-text">Hackathon Participant</p></a
-          >
+            <div class="row">
+              <a href="TweetGuard"
+                ><img class = "thumbnail" src="TweetGuard/thumbnail.png" />
+                <h2>TweetGuard</h2>
+                <p class="tertiary-text">Hackathon Participant</p></a
+              >
 
-          <a href="Work/CampusFacilities"
-            ><img class = "thumbnail" src="CampusFacilities/thumbnail.png" />
-            <h2>Campus Facilities @ TNS</h2>
-            <p class="tertiary-text">Product Designer</p></a
-          > 
-        </div>
+              <a href="CampusFacilities"
+                ><img class = "thumbnail" src="CampusFacilities/thumbnail.png" />
+                <h2>Campus Facilities @ TNS</h2>
+                <p class="tertiary-text">Product Designer</p></a
+              > 
+            </div>
 
-        <div class="row">
-          <a href = "Work/BFADT-Archive"
-            ><img class = "thumbnail" src="BFADT-Archive/thumbnail.png" />
-            <h2>BFA DT Archive</h2>
-            <p class="tertiary-text">UX Designer</p></a
-          >
+            <div class="row">
+              <a href = "BFADT-Archive"
+                ><img class = "thumbnail" src="BFADT-Archive/thumbnail.png" />
+                <h2>BFA DT Archive</h2>
+                <p class="tertiary-text">UX Designer</p></a
+              >
+            </div>  
+          </div> 
           
-          <!-- <a href="Work/ProjectFolder"
-            ><img class = "thumbnail" src="featured-1.png" />
-            <h2>Project Title</h2>
-            <p class="tertiary-text">Role</p></a
-          >
-          </div> -->
-
+          <div id = "More-Work">
+            <div class="row">
+              <a href="FrenchFryFunFacts/"
+                ><img class = "thumbnail" src="FrenchFryFunFacts/thumbnail.png" />
+                <h2>French Fry Fun Facts</h2>
+                <p class="tertiary-text">Visual Designer</p></a
+              >
+    
+              <a href="Intimo/"
+              ><img class = "thumbnail" src="Intimo/thumbnail.png" />
+              <h2>Intimo</h2>
+              <p class="tertiary-text">Developer</p></a
+            >
+            </div>
+          </div>
         </div>
 
       </div>
@@ -130,6 +141,35 @@
     </script>
 
     <script>
+
+      let DPDWork = document.getElementById("DPD-Work");
+      let MoreWork = document.getElementById("More-Work");
+      let moreWorkButton = document.getElementById("MoreWork-button");
+      let DPDButton = document.getElementById("DPD-button");
+
+      function showDPD() {
+        if(moreWorkButton.classList.contains("active")) { 
+          moreWorkButton.classList.remove("active");
+          DPDButton.classList.add("active");
+        }
+
+        DPDWork.style.display = "block";
+        MoreWork.style.display = "none";
+      }
+
+      function showMore() {
+        if(DPDButton.classList.contains("active")) { 
+          DPDButton.classList.remove("active");
+          moreWorkButton.classList.add("active");
+        }
+
+        DPDWork.style.display = "none";
+        MoreWork.style.display = "block";
+      }
+
+    </script>
+
+    <script>
       let blurbOptions = [
         "Hi, welcome to my portfolio!",
         "UX/UI and fun web dev project enthusiast!",
@@ -144,6 +184,6 @@
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
-    <script src="bgSketch.js"></script>
+    <!-- <script src="bgSketch.js"></script> -->
   </body>
 </html>
