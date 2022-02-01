@@ -145,13 +145,19 @@ button:active {
 }
 
 #home {
-  width: 100px;
-  height: 62px;
-  background-image: url("home-button.png");
+  max-width: fit-content;
+  text-align: center;
+  padding: 10px 15px;
+  background-color: white;
+  border: #a97c73 2px solid;
+  color: #a97c73;
+  font-family: "lato";
+  font-size: 18px;
 }
 
 #home:hover {
-  background-image: url("home-button-hover.png");
+  background-color: #a97c73;
+  color: white;
 }
 
 .featured {
