@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project.css" />
+    <title>Resume</title>
+</head>
+<body>
+    <div id="main" class="startState">
+        <div class="header">
+            <nav>
+                <ul>
+                    <li><a href = "index.html" class="logo">Isabel Anguera.</a></li>
+                    <li class="page-link active"><a href = "figma-playground.html">Figma Playground</a></li>
+                    <li class="page-link"><a href = "resume.html">Resume</a></li>
+                    <li class="page-link"><a href = "about-me.html">About Me</a></li>
+                </ul>
+            </nav>
+  
+        <div id="menuContainer" class="menuIconContainer" onclick="showMenu()">
+          <div class="topBar"></div>
+          <div class="middleBar"></div>
+          <div class="bottomBar"></div>
+        </div>
+   
+    </div>
+
+    <section class="container centered">
+
+    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="550" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FV1IZg0j5GTTZ7OlGKlUA3S%2FFigma-Playground%3Fpage-id%3D0%253A1%26node-id%3D102%253A2%26viewport%3D322%252C48%252C0.06%26scaling%3Dscale-down%26starting-point-node-id%3D102%253A2" allowfullscreen></iframe>
+
+</section>
+
+    <div class="centered">
+        <a href = "../index.html" id="home">Back to Home</a>
+    </div>
+
+    <section class = "footer centered">
+        <small>isabelanguera2@gmail.com</small>
+    </section>
+
+    <div id="myMenu" class="verticalMenu">
+        <a href="about-me.html">About Me</a>
+        <a href="resume.html">Resume</a>
+        <a href="figma-playground.html">Figma Playground</a>
+      </div>
+  
+      <script>
+        function showMenu() {
+          document
+            .getElementById("menuContainer")
+            .classList.toggle("animateHamburger");
+          document.getElementById("myMenu").classList.toggle("openMenu");
+          document.getElementById("main").classList.toggle("moveOver");
+        }
+      </script>
+</body>
+</html>
