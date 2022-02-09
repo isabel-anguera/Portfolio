@@ -2,6 +2,8 @@
 
 body {
   font-family: "Lato";
+  margin: 0;
+  overflow-x: hidden;
 }
 
 * {
@@ -10,30 +12,18 @@ body {
 
 .header {
   margin: 0 auto;
-  width: 85%;
-  border: solid red 1px;
-  display: flex;
-  flex-direction: row;
-  padding: 0px;
-}
-
-#logo {
-  border: #a97c73 4px solid;
-  float: left;
-  padding: 20px 25px;
-  display: flex;
-}
-
-button {
-  padding: 20px 25px;
-  margin: 0 52px 0 0;
-  font-weight: 400;
-  font-size: 24pt;
+  width: 80%;
+  overflow: hidden;
 }
 
 h1 {
-  font-weight: 700;
-  font-size: 28pt;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 6.75vw;
+  float: right;
+  margin-top: 9%;
+  margin-right: 0;
+  margin-left: 15%;
 }
 
 .menuIconContainer {
@@ -94,7 +84,6 @@ h1 {
 
 .verticalMenu a:hover {
   text-shadow: -5px 5px 5px silver;
-  background-color: white;
 }
 
 .verticalMenu a:first-child {
@@ -102,13 +91,19 @@ h1 {
 }
 
 .verticalMenu {
-  height: 100%;
+  height: 28%;
   width: 0px;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
   background: rgb(222, 240, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(222, 240, 255, 1) 0%,
+    rgba(240, 248, 255, 1) 78%,
+    rgba(255, 255, 255, 0.2531991839762612) 100%
+  );
   overflow-x: hidden;
   transition: 0.4s;
 }
@@ -228,7 +223,7 @@ a:active {
   }
 
   h1 {
-    /*  font-size: 3.5em; */
+    font-size: 3.5em;
     margin: 8% auto 3% auto;
     text-align: center;
     float: none;
