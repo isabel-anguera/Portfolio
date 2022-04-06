@@ -232,6 +232,16 @@ button:active {
   display: none;
 }
 
+/* RESUME */
+
+#download-btn {
+  color: #667e65;
+  margin: 0 auto;
+  width: 70%;
+  text-align: center;
+  font-weight: bold;
+}
+
 /* FOOTER */
 
 .footer {
@@ -364,4 +374,11 @@ button:active {
   .column p {
     width: 90%;
   }
+}
+
+/* CANVAS */
+
+canvas {
+  display: absolute;
+  z-index: 0;
 }
