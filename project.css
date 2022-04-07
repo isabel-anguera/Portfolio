@@ -17,6 +17,7 @@ body {
 .logo {
   padding: 10px 15px;
   border: #667e65 4px solid;
+  background-color: white;
   font-weight: 700;
   font-size: 24px;
 }
@@ -193,6 +194,7 @@ button:active {
 
 .tab-button {
   display: inline-block;
+  background-color: white;
 }
 
 .tab-nav {
