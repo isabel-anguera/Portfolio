@@ -14,29 +14,70 @@ body {
   -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.12);
   -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.12);
   box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.12);
+  width: 400px;
+  border-radius: 2px;
+  padding: 20px;
+}
+
+.card:hover {
+  outline: solid rgb(218, 218, 218) 1px;
+  background-color: white;
 }
 
 .card-header {
   display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
-.card-title {}
-
-.card-visibility-tooltip {
-  flex: .10%;
+.card-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin: 0;
 }
 
-.card-description {}
+.card-description {
+  font-weight: light;
+  font-size: 16px;
+  margin: 15px 0px;
+}
 
-.card-tag-group {}
+.card-tag-group {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 8px;
+  row-gap: 8px;
+}
 
-.card-tag {}
+.card-tag {
+  display: flex;
+  padding: 4px 6px;
+  font-size: 14px;
+  margin: 0;
+}
 
-#industry-tag {}
+#industry-tag {
+  background-color: #D2F1FF;
+  border-radius: 2px;
+  box-shadow: -1.5px 1.5px 0px 0px rgba(139,197,210);
+  color: #415D94;
+}
 
-#skill-tag {}
+#skill-tag {
+  background-color: #E5FFE0;
+  border-radius: 2px;
+  box-shadow: -1.5px 1.5px 0px 0px rgba(141,210,139);
+  color: #137D11;
+}
 
-#tool-tag {}
+#tool-tag {
+  background-color: #FFF4E0;
+  border-radius: 2px;
+  box-shadow: -1.5px 1.5px 0px 0px rgba(210,156,139);
+  color: #CC3B0E;
+}
 
 /* END NEW 2024 */
 
