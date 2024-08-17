@@ -414,6 +414,10 @@ a:active {
 
 @media (max-width: 580px) {
   
+  canvas {
+    display: none;
+  }
+  
   #home-link {
     display: none;
   }
