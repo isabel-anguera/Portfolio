@@ -10,6 +10,12 @@ body {
 
 /* HEADER */
 
+.header {
+  margin: 0 auto;
+  width: 90%;
+  padding: 24px 0 0 0;
+}
+
 #home-link-container {
   width: 30%;
 }
@@ -71,15 +77,20 @@ nav ul li a {
 .card {
   -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.12);
   -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.12);
-  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.12);
-  width: 400px;
-  border-radius: 2px;
+  box-shadow: -5px 5px 0px 0px rgba(79,79,79);
+  border: solid 1px #4f4f4f;
+  width: 350px;
+  border-radius: 4px;
   padding: 20px;
+  background-color: white;
+}
+
+.card:hover .card-title {
+  text-decoration: underline;
 }
 
 .card:hover {
-  outline: solid rgb(218, 218, 218) 1px;
-  background-color: white;
+  background-color: white;;
 }
 
 .card-header {
@@ -91,7 +102,7 @@ nav ul li a {
 .card-title {
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 14px;
   margin: 0;
 }
 
@@ -144,8 +155,9 @@ nav ul li a {
 
 .card-description {
   font-weight: light;
-  font-size: 16px;
-  margin: 15px 0px;
+  font-size: 14px;
+  margin: 5px 0px 10px 0px;
+  text-align: left;
 }
 
 .tag-group {
@@ -187,22 +199,28 @@ nav ul li a {
 
 .container {
   text-align: center;
-  width: 60%;
-  margin: 0 auto 60px auto;
+  width: 80%;
+  margin: 0 auto 32px auto;
   
 }
 
 #home-tag-group {
   align-items: center;
   justify-content: center;
+  padding-bottom: 24px;
 }
 
 .category-tag {
-  padding: 10px 15px;
+  padding: 8px 10px;
   border: 1px solid #296046;
   border-radius: 4px;
-  box-shadow: 0px 2px 6px 2px rgba(0,0,0, .15);
+  box-shadow: -2px 2px 0px 0px rgba(41,96,70);
   background-color: white;
+  font-size: 14px;
+}
+
+.category-tag:hover {
+  box-shadow: none;
 }
 
 #default-state {
@@ -212,6 +230,27 @@ nav ul li a {
 #selected-state {
   background-color: #296046;
   color: white;
+  box-shadow: -2px 2px 0px 0px rgba(0,57,30);
+}
+
+hr {
+  width: 50px;
+}
+
+.thumbnail-container {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 40px;
+  row-gap: 40px;
+  justify-content: center;
+  padding-top: 24px;
+}
+
+#explore-my-work {
+  padding: 20px 40px;
+  border: solid 2px #fff;
+  border-radius: 4px;
 }
 
 /* END NEW 2024 */
@@ -219,13 +258,6 @@ nav ul li a {
 
 
 /* HEADER ELEMENTS */
-
-.header {
-  margin: 0 auto;
-  width: 90%;
-  padding: 45px 0 20px 0;
-}
-
 
 
 .active {
@@ -254,7 +286,7 @@ a {
 }
 
 p {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.6;
 }
 
