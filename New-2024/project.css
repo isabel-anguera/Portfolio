@@ -19,15 +19,12 @@ body {
 #home-link-container {
   width: 30%;
   display:block;
+  margin-left: 1px;
 }
 
 #home-link {
   text-transform: uppercase;
   font-weight: 700;
-}
-
-#home-link:hover {
-  background-color: white;
 }
 
 #logo-container {
@@ -44,6 +41,7 @@ body {
 .nav-links {
   width: 30%;
   text-align: right;
+  margin: 0 1px;
 }
 
 nav {
@@ -66,7 +64,7 @@ nav ul li:first-child {
 }
 
 nav ul li a {
-  display: block;
+  display: inline-block;
   padding: 15px 20px;
   text-decoration: none;
 }
@@ -121,6 +119,8 @@ hr {
 .card:hover {
   /* background-color: rgb(255, 255, 244); */
   background-color: rgba(255, 255, 244, 0);
+  border: solid 1px #4f4f4f;
+  margin:0px;
 }
 
 .card-header {
@@ -294,12 +294,14 @@ a {
   text-decoration: none;
   color: black;
   display: block;
-  padding: 15px 20px;
+  padding: 15px 15px;
   text-decoration: none;
 }
 
 a:hover {
-  background-color: #f7f7f7;
+  border: black solid 1px;
+  border-radius: 4px;
+  margin:-1px;
 }
 
 a:active {
@@ -308,13 +310,73 @@ a:active {
 
 /* RESUME */
 
-#download-btn {
-  color: #667e65;
-  margin: 0 auto;
-  width: 70%;
-  text-align: center;
-  font-weight: bold;
+#resume {
+  padding-top: 32px;
+  text-align: left;
+  width: 60%;
+  min-width: 350px;
 }
+
+#resume-download {
+  width: 135px;
+  padding: 10px 15px;
+  text-align: center;
+  border: black solid 1px;
+  border-radius: 4px;
+  margin: 16px 0 8px 0;
+}
+
+#resume-download:hover {
+  background-color: #E5FFE0;
+  color: black;
+}
+
+
+#resume h2 {
+  color: #137D11;
+  text-transform: capitalize;
+  margin: 4px 0;
+  font-size: 18px;
+}
+
+#resume p {
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+#resume span {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.resume-section {
+  padding-top: 16px;
+}
+
+.resume-sub-section {
+  padding: 8px 0;
+}
+
+.resume-project {
+  padding: 4px 0 8px 0;
+}
+
+#resume ul {
+  margin: 4px 0;
+}
+
+#resume li {
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+#resume .tag-group {
+  padding: 16px 0;
+}
+
+
+
 
 /* HAMBURGER MENU */
 
