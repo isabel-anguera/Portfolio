@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Isabel Anguera</title>
+    <link rel="stylesheet" href="project.css" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <div id="main" class="startState">
+      <div class="header">
+        <nav>
+          <ul>
+              <li><a href = "index.html" class="logo">Isabel Anguera.</a></li>
+              <li class="page-link"><a href = "figma-playground.html">Figma Playground</a></li>
+              <li class="page-link"><a href = "resume.html">Resume</a></li>
+              <li class="page-link"><a href = "about-me.html">About Me</a></li>
+          </ul>
+      </nav>
+
+      <div id="menuContainer" class="menuIconContainer" onclick="showMenu()">
+        <div class="topBar"></div>
+        <div class="middleBar"></div>
+        <div class="bottomBar"></div>
+      </div>
+ 
+      </div>
+
+      <section class="container">
+
+        <div id="bioBlurb">
+          <p id="blurb">
+            Hi, welcome to my portfolio!
+          </p>
+        </div>
+
+
+        <ul class = 'tab-nav'>
+          <li><a id="DPD-button" class = "tab-button active" onclick = "showDPD()">Product Design Work</a></li>
+          <li><a href = "#" id = "MoreWork-button" class ="tab-button" onclick = "showMore()">More Work</a></li>
+        </ul>
+
+        <div id="thumbnail-container">
+          <div id = "DPD-Work" class = "showing">
+            <div class="row">
+              <a href = "OnePlusThemeDesign">
+              <img class = "thumbnail" src = "OnePlusThemeDesign/thumbnail.png">
+              <h2>OnePlus Themed Interface</h2>
+              <p class="tertiary-text">UI Designer</p></a
+              >
+
+              <a href="MatBuddy"
+                ><img class = "thumbnail" src="MatBuddy/thumbnail.png" />
+                <h2>MatBuddy</h2>
+                <p class="tertiary-text">Product Designer</p></a
+              >
+            </div>
+
+            <div class="row">
+              <a href="TweetGuard"
+                ><img class = "thumbnail" src="TweetGuard/thumbnail.png" />
+                <h2>TweetGuard</h2>
+                <p class="tertiary-text">Hackathon Participant</p></a
+              >
+
+              <a href="CampusFacilities"
+                ><img class = "thumbnail" src="CampusFacilities/thumbnail.png" />
+                <h2>Campus Facilities @ TNS</h2>
+                <p class="tertiary-text">Product Designer</p></a
+              > 
+            </div>
+
+            <div class="row">
+              <a href = "BFADT-Archive"
+                ><img class = "thumbnail" src="BFADT-Archive/thumbnail.png" />
+                <h2>BFA DT Archive</h2>
+                <p class="tertiary-text">UX Designer</p></a
+              >
+            </div>  
+          </div> 
+          
+          <div id = "More-Work">
+            <div class="row">
+              <a href="FrenchFryFunFacts/"
+                ><img class = "thumbnail" src="FrenchFryFunFacts/thumbnail.png" />
+                <h2>French Fry Fun Facts</h2>
+                <p class="tertiary-text">Visual Designer</p></a
+              >
+    
+              <a href="Intimo/"
+              ><img class = "thumbnail" src="Intimo/thumbnail.png" />
+              <h2>Intimo</h2>
+              <p class="tertiary-text">Developer</p></a
+            >
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+      <div class="footer centered">
+        <small>isabelanguera2@gmail.com</small>
+
+        <!-- <ul class="social-media-bar">
+          <li><a href="https://www.facebook.com/isabel.anguera.5"
+            ><img class="social-media-icon" src="../Assets/facebook-icon.png"
+          /></a></li>
+
+          <li><a href="https://www.instagram.com/isabel.anguera/"
+            ><img class="social-media-icon" src="../Assets/instagram-icon.png"
+          /></a></li>
+
+          <li><a href="https://www.linkedin.com/in/isabel-anguera/"
+            ><img class="social-media-icon" src="../Assets/linkedin-icon.png"
+          /></a></li>
+
+          <li><a href="https://twitter.com/itsisabel22"
+            ><img class="social-media-icon" src="../Assets/twitter-icon.png" />
+          </a></li>
+        </ul> -->
+
+      </div>
+
+    <div id="myMenu" class="verticalMenu">
+      <a href="about-me.html">About Me</a>
+      <a href="resume.html">Resume</a>
+      <a href="figma-playground.html">Figma Playground</a>
+    </div>
+
+    <script>
+      function showMenu() {
+        document
+          .getElementById("menuContainer")
+          .classList.toggle("animateHamburger");
+        document.getElementById("myMenu").classList.toggle("openMenu");
+        document.getElementById("main").classList.toggle("moveOver");
+      }
+    </script>
+
+    <script>
+
+      let DPDWork = document.getElementById("DPD-Work");
+      let MoreWork = document.getElementById("More-Work");
+      let moreWorkButton = document.getElementById("MoreWork-button");
+      let DPDButton = document.getElementById("DPD-button");
+
+      function showDPD() {
+        if(moreWorkButton.classList.contains("active")) { 
+          moreWorkButton.classList.remove("active");
+          DPDButton.classList.add("active");
+        }
+
+        DPDWork.style.display = "block";
+        MoreWork.style.display = "none";
+      }
+
+      function showMore() {
+        if(DPDButton.classList.contains("active")) { 
+          DPDButton.classList.remove("active");
+          moreWorkButton.classList.add("active");
+        }
+
+        DPDWork.style.display = "none";
+        MoreWork.style.display = "block";
+      }
+
+    </script>
+
+    <script>
+      let blurbOptions = [
+        "Hi, welcome to my portfolio!",
+        "UX/UI and fun web dev project enthusiast!",
+        "Experience Designer at projekt202",
+        "Check out my prototypes, projects, and presentations!", 
+        "Let's Connect!",
+      ];
+
+      let blurbContent =
+        blurbOptions[Math.floor(Math.random() * blurbOptions.length)];
+      document.getElementById("blurb").innerHTML = blurbContent;
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+    <script src="bgSketch2.js"></script>
+  </body>
+</html>

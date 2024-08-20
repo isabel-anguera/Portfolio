@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project.css" />
+    <title>About Me</title>
+</head>
+<body>
+    <div id="main" class="startState">
+        <div class="header">
+            <nav>
+                <ul>
+                    <li><a href = "index.html" class="logo">Isabel Anguera.</a></li>
+                    <li class="page-link"><a href = "figma-playground.html">Figma Playground</a></li>
+                    <li class="page-link"><a href = "resume.html">Resume</a></li>
+                    <li class="page-link active"><a href = "about-me.html">About Me</a></li>
+                </ul>
+            </nav>
+  
+        <div id="menuContainer" class="menuIconContainer" onclick="showMenu()">
+          <div class="topBar"></div>
+          <div class="middleBar"></div>
+          <div class="bottomBar"></div>
+        </div>
+   
+    </div>
+
+    <section class="container">
+
+        <h1>About Me</h1>
+        <div class="row">
+            <div id="column">
+                <p>
+                Hi there! My name is Isabel Anguera. I am a recent graduate of
+                Parsons School of Design, having majored in Design and Technology (BFA), and
+                Culture and Media Studies (BA). I love working withiin all the areas of digital product design, and merging design with social change/commentary.
+                I am based in New York, though I have lived in a few different places
+                throughout my life, including Peru, Portugal, and a couple of
+                different East coast states in the US. I love meeting new people and
+                learning from them and I can't wait to be a part of a super cool team!
+                </p>
+            </div>
+            <div class="column">
+                <img class="full" src="Profile.jpg" />
+            </div>
+        </div>
+
+
+        <div class="centered">
+            <a href = "../index.html" id="home">Back to Home</a>
+        </div>
+
+    </section>
+
+    <section class = "footer centered">
+        <small>isabelanguera2@gmail.com</small>
+    </section>
+
+    <div id="myMenu" class="verticalMenu">
+        <a href="about-me.html">About Me</a>
+        <a href="resume.html">Resume</a>
+        <a href="figma-playground.html">Figma Playground</a>
+      </div>
+  
+      <script>
+        function showMenu() {
+          document
+            .getElementById("menuContainer")
+            .classList.toggle("animateHamburger");
+          document.getElementById("myMenu").classList.toggle("openMenu");
+          document.getElementById("main").classList.toggle("moveOver");
+        }
+      </script>
+</body>
+</html>
