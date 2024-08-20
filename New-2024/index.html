@@ -13,11 +13,20 @@
         <nav>
           <ul>
               <li id = "home-link-container"><a href = "index.html" id="home-link">Isabel Anguera</a></li>
-              <li id = "logo-container"><img class = "logo" src="logo.png"></li>
+              <li id = "logo-container"><a class ="logo"href = "index.html"><img class = "logo" src="logo.png"></a></li>
               <div class = "nav-links">
                 <li class="page-link"><a href = "resume.html">Resume</a></li>
                 <li class="page-link"><a href = "about-me.html">About Me</a></li>
               </div>
+          </ul>
+        </nav>
+
+        <nav>
+          <ul>
+            <div class = "nav-links" id = "mobile-nav">
+              <li class="page-link"><a href = "resume.html">Resume</a></li>
+              <li class="page-link"><a href = "about-me.html">About Me</a></li>
+            </div>
           </ul>
         </nav>
       </div>
@@ -49,9 +58,9 @@
 
       <div class = "thumbnail-container">
 
-          <a class = "card" href = "">
+          <a class = "card" href = "telco/index.html">
             <div class = "card-header">
-              <h2 class = "card-title">TELCO Company</h2>
+              <h2 class = "card-title">Telco Company</h2>
               <div class = "tooltip">
                 <span class = "tooltip-text">Limited visiblity due to NDA</span>
                 <i class="fa-solid fa-lock"></i>
@@ -59,7 +68,7 @@
             </div>
             <p class="card-description">Consulting project for a Fortune 100 Telco's internal sales tool. </p>
             <div class = "tag-group">
-              <span class = "card-tag" id = "industry-tag">TELCO</span>
+              <span class = "card-tag" id = "industry-tag">Telco</span>
               <span class = "card-tag" id = "skill-tag">UX Design</span>
               <span class = "card-tag" id = "skill-tag">Information Architecture</span>
               <span class = "card-tag" id = "skill-tag">Prototyping</span>
@@ -69,7 +78,7 @@
             </div>
           </a>
 
-          <a class = "card" href = "">
+          <a class = "card" href = "sportswear/index.html">
             <div class = "card-header">
               <h2 class = "card-title">Global Sportswear Company</h2>
               <div class = "tooltip">
@@ -92,7 +101,7 @@
             </div>
           </a>
 
-          <a class = "card" href = "">
+          <a class = "card" href = "opal/index.html">
             <div class = "card-header">
               <h2 class = "card-title">Opal</h2>
             </div>
@@ -107,85 +116,22 @@
             </div>
           </a>
 
-          <a class = "card" href = "">
+          <a class = "card" href = "isfs/index.html">
             <div class = "card-header">
               <h2 class = "card-title">Instruction Sets for Strangers</h2>
             </div>
             <p class="card-description">Just a fun school project that introduced me to, and made me love UX.</p>
             <div class = "tag-group">
-              <span class = "card-tag" id = "industry-tag">Fun</span>
+              <span class = "card-tag" id = "industry-tag">Just for Fun</span>
               <span class = "card-tag" id = "industry-tag">School</span>
               <span class = "card-tag" id = "skill-tag">UX Design</span>
               <span class = "card-tag" id = "skill-tag">Iterative Design</span>
               <span class = "card-tag" id = "skill-tag">User Research</span>
             </div>
           </a>
-
         </div>
-
-
   
-
-    <div id="myMenu" class="verticalMenu">
-      <a href="about-me.html">About Me</a>
-      <a href="resume.html">Resume</a>
-      <a href="figma-playground.html">Figma Playground</a>
-    </div>
-
-    <script>
-      function showMenu() {
-        document
-          .getElementById("menuContainer")
-          .classList.toggle("animateHamburger");
-        document.getElementById("myMenu").classList.toggle("openMenu");
-        document.getElementById("main").classList.toggle("moveOver");
-      }
-    </script>
-
-    <script>
-
-      let DPDWork = document.getElementById("DPD-Work");
-      let MoreWork = document.getElementById("More-Work");
-      let moreWorkButton = document.getElementById("MoreWork-button");
-      let DPDButton = document.getElementById("DPD-button");
-
-      function showDPD() {
-        if(moreWorkButton.classList.contains("active")) { 
-          moreWorkButton.classList.remove("active");
-          DPDButton.classList.add("active");
-        }
-
-        DPDWork.style.display = "block";
-        MoreWork.style.display = "none";
-      }
-
-      function showMore() {
-        if(DPDButton.classList.contains("active")) { 
-          DPDButton.classList.remove("active");
-          moreWorkButton.classList.add("active");
-        }
-
-        DPDWork.style.display = "none";
-        MoreWork.style.display = "block";
-      }
-
-    </script>
-
-    <script>
-      let blurbOptions = [
-        "Hi, welcome to my portfolio!",
-        "UX/UI and fun web dev project enthusiast!",
-        "Experience Designer at projekt202",
-        "Check out my prototypes, projects, and presentations!", 
-        "Let's Connect!",
-      ];
-
-      let blurbContent =
-        blurbOptions[Math.floor(Math.random() * blurbOptions.length)];
-      document.getElementById("blurb").innerHTML = blurbContent;
-    </script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
-    <script src="bgSketch2.js"></script>
+    <script src="bgSketch.js"></script>
   </body>
 </html>
