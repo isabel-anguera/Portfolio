@@ -127,6 +127,10 @@ nav ul li a {
   display: none;
 }
 
+#mobile-nav-container {
+  display: none;
+}
+
 
 /* INDEX */
 
@@ -381,7 +385,7 @@ blockquote {
 /* ----- resume ----- */
 
 #resume {
-  padding-top: 0px;
+  padding-top: 16px;
   text-align: left;
   width: 60%;
 }
@@ -450,6 +454,11 @@ blockquote {
   border-radius: 4px;
 }
 
+.container-about {
+  margin: 16px auto 0 auto;
+  width: 90%;
+}
+
 /* CANVAS */
 
 canvas {
@@ -476,6 +485,10 @@ canvas {
 
   #mobile-nav .page-link {
     display: inline-block;
+  }
+
+  #mobile-nav-container {
+    display: block;
   }
 
   nav ul {
@@ -541,6 +554,7 @@ canvas {
   #testimonials-container {
     width: 90%;
   }
+  
 }
 
 /* ----- explore my work section ---- */
