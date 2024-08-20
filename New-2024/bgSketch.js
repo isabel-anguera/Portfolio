@@ -3,7 +3,7 @@ let movingCircles = [];
 let changingValue = 360;
 
 function setup() {
-  cnv = createCanvas(windowWidth, windowHeight);
+  cnv = createCanvas(windowWidth, 1500);
   noStroke();
   frameRate(10);
   colorMode(HSL);
