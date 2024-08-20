@@ -161,7 +161,6 @@ hr {
   width: 70%;
   padding-top: 24px;
   margin-top: 56px;
-  /* border: 1px solid black; */
   border-radius: 4px;
 }
 
@@ -171,6 +170,7 @@ hr {
   margin: 16px 10px;
   background-color: white;
   border-radius: 4px;
+  border: 1px solid rgb(230, 230, 230);
 }
 
 blockquote {
@@ -179,7 +179,7 @@ blockquote {
 }
 
 #testimonials-container .row {
-  margin-bottom: 24px;
+  margin-bottom: 8px;
 }
 
 
@@ -491,6 +491,23 @@ canvas {
   .header {
     padding: 24px 0;
   }
+
+  #testimonials-container .row {
+    display: block;
+  }
+
+  #testimonials-container .column {
+    margin-bottom: 24px;
+  }
+
+  #testimonials-container hr {
+    display: none;
+  }
+
+  #testimonials-container h2 {
+    margin-bottom: 24px;
+  }
+
 }
 
 @media (max-width: 580px) {
@@ -518,6 +535,10 @@ canvas {
   }
 
   .column p {
+    width: 90%;
+  }
+
+  #testimonials-container {
     width: 90%;
   }
 }
