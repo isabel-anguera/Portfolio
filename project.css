@@ -444,7 +444,7 @@ blockquote {
 }
 
 #resume .tag-group {
-  padding: 16px 0;
+  padding: 16px 0 48px 0;
 }
 
 /* ----- about-me ----- */
@@ -553,6 +553,10 @@ canvas {
 
   #testimonials-container {
     width: 90%;
+  }
+
+  .container-about .column {
+    margin-bottom: 24px;
   }
   
 }
